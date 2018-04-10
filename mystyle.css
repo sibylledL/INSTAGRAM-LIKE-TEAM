@@ -1,0 +1,66 @@
+body{
+	margin-left: 13%;
+}
+.flexbox-container {
+	
+	display: flex;
+	padding-right: 55%;
+	
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding-left: 9%;
+	margin-top: 5%;
+	position: relative;
+}
+.flexbox-container div > img {
+	transition: all 0.3s;
+}
+
+.flexbox-container div > img:hover {
+	filter: opacity(80%);
+	filter: brightness(60%);
+	transform: scale(1.1, 1.1);
+}
+
+.flexbox-container .logo{
+	position: absolute;
+	top: 48%;
+	left: 45%;
+	opacity: 0;
+	display: flex;
+	height: 35px;
+	width: 100px;
+	transition: all 0.5s;
+}
+
+.flexbox-container .logo img {
+	margin: auto;
+	height: 100%;
+}
+
+.flexbox-container div:hover .logo {
+	opacity: 1;
+}
+
+.footer{
+	display: flex;
+	text-indent: 1%;
+	font-size: 13px;
+	margin-top: 5%;
+	margin-left: 5%;
+	font-family: 'Roboto', sans-serif;
+}
+.footer-two{
+	text-indent: 1%;
+	font-size: 12px;
+	margin-left: 5%;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+}
+
+.instagram{
+	color: grey;
+	text-align: center;
+}
