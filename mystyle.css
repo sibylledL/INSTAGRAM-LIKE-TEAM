@@ -206,24 +206,22 @@ margin-bottom: 40px;
 
 .footer {
   display: flex;
-  text-indent: 1%;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
 	justify-content: center;
 
 }
+.footer p{
+padding-right:10px;
+}
 
 .footer-two {
-  text-indent: 1%;
   font-size: 12px;
   display: flex;
   font-family: 'Roboto', sans-serif;
 	justify-content: center;
 }
 
-.footer p:first-child{
-	text-indent: 0%;
-}
 
 .instagram {
   color: grey;
