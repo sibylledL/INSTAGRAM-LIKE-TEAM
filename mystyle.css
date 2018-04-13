@@ -132,6 +132,7 @@ button{
   justify-content: space-between;
   margin-right: 40%;
   margin-top: 2%;
+  width:300px;
 }
 
 .descriptions {
