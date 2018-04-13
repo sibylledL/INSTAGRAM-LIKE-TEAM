@@ -11,7 +11,7 @@ body {
   background-color: #fafafa;
 	position:fixed;
 	z-index: 100;
-width:100%;
+  width:100%;
 }
 
 .nav {
@@ -132,7 +132,6 @@ button{
   justify-content: space-between;
   margin-right: 40%;
   margin-top: 2%;
-  width:300px;
 }
 
 .descriptions {
@@ -142,7 +141,8 @@ button{
 /* SHADD PHOTOS + FOOTER */
 
 .cadrage {
-  margin:auto;
+  margin-left:334px;
+	margin-right: 334px;
 
 }
 
@@ -151,7 +151,6 @@ button{
 /* padding-right: 55%;*/
 	justify-content: space-around;
 	margin:auto;
-  width:700px;
 }
 
 .flexbox-container>div {
@@ -207,24 +206,31 @@ margin-bottom: 40px;
 
 .footer {
   display: flex;
+  text-indent: 1%;
   font-size: 13px;
   font-family: 'Roboto', sans-serif;
 	justify-content: center;
 
 }
-.footer p{
-padding-right:10px;
-}
 
 .footer-two {
+  text-indent: 1%;
   font-size: 12px;
   display: flex;
   font-family: 'Roboto', sans-serif;
 	justify-content: center;
 }
 
+.footer p:first-child{
+	text-indent: 0%;
+}
 
 .instagram {
   color: grey;
   text-align: center;
+}
+
+.footer p:hover{
+  color: rgb(1, 146, 243);
+  cursor: pointer;
 }
