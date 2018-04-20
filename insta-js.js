@@ -1,5 +1,6 @@
 $(function() {
 
+
   var closeBtn = $(".fermeFenetre");
 
   $(".js--img").click(function() {
@@ -8,6 +9,7 @@ $(function() {
     $("#testons-"+modal).attr("src", $changeSrc);
     $("#nouvelleFenetre-"+modal).css("display", "block");
   });
+
 
   closeBtn.click(function() {
     $(".modal").css("display", "none")
