@@ -3,19 +3,16 @@ $(function() {
 
   var closeBtn = $(".fermeFenetre");
 
-<<<<<<< HEAD
+
   $(".js--img").click(function() {
-=======
   $("#imgProfil-1").click(function () {
->>>>>>> ad025ca8349cd0716af6b0436e8c9a0d927f2d03
+  $(".js--img").click(function() {
     var $changeSrc = $(this).attr("src");
     var modal = $(this).data('modal');
     $("#testons-"+modal).attr("src", $changeSrc);
     $("#nouvelleFenetre-"+modal).css("display", "block");
   });
 
-<<<<<<< HEAD
-=======
   $("#imgProfil-2").click(function() {
     var $changeSrc = $(this).attr("src");
     $("#testons-2").attr("src", $changeSrc);
@@ -103,7 +100,7 @@ $(function() {
   });
 
 
->>>>>>> ad025ca8349cd0716af6b0436e8c9a0d927f2d03
+
   closeBtn.click(function() {
     $(".modal").css("display", "none")
   })
