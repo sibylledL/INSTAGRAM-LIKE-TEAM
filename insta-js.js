@@ -5,8 +5,6 @@ $(function() {
 
 
   $(".js--img").click(function() {
-  $("#imgProfil-1").click(function () {
-  $(".js--img").click(function() {
     var $changeSrc = $(this).attr("src");
     var modal = $(this).data('modal');
     $("#testons-"+modal).attr("src", $changeSrc);
