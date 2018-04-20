@@ -1,8 +1,9 @@
 $(function() {
 
+
   var closeBtn = $(".fermeFenetre");
 
-  $("#imgProfil-1").click(function() {
+  $("#imgProfil-1").click(function () {
     var $changeSrc = $(this).attr("src");
     $("#testons-1").attr("src", $changeSrc);
     $("#nouvelleFenetre-1").css("display", "block");
@@ -18,12 +19,14 @@ $(function() {
     var $changeSrc = $(this).attr("src");
     $("#testons-3").attr("src", $changeSrc);
     $("#nouvelleFenetre-3").css("display", "block");
+
   });
 
   $("#imgProfil-4").click(function() {
     var $changeSrc = $(this).attr("src");
     $("#testons-4").attr("src", $changeSrc);
     $("#nouvelleFenetre-4").css("display", "block");
+
   });
 
   $("#imgProfil-5").click(function() {
