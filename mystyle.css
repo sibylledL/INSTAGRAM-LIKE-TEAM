@@ -389,7 +389,7 @@ a {
 }
 
 .modal-abonner {
-  color: blue;
+  color: #81ccfd;
   font-size: 15px;
 }
 
@@ -404,9 +404,25 @@ a {
   margin-left: 20px;
 }
 /*table commentaire*/
+.tableau{
+width: 350px;
+height:130px;
+overflow: auto;
+}
+
+table{
+width:340px;
+}
+
+.blue{
+  background-color: #b3e0fe;
+}
+
 .row{
-  margin-top: 10px;
-  padding-top: 10px;
+  width:100%;
+  font-size: 15px;
+  display:flex;
+  flex-direction: row;
 }
 
 tr{
@@ -414,49 +430,97 @@ tr{
 }
 
 .col-1{
-padding-right: 10px;
+
+  height: 100%;
+  margin-right: 5px;
+  padding:5px;
+  font-weight: bold;
 }
+
+.col-2{
+  width:80%;
+  height: 100%;
+  padding:5px;
+}
+
+
 /*fin style de table*/
 
 .comment-modal-one a {
   font-weight: 600;
 }
 
+.addComment{
+  position:relative;
+  margin-top: 10px;
+  height: 26px;
+  width: 363px;
+}
+
+.submit{
+  height: 30px;
+  width: 60px;
+  padding:0px;
+  font-style: 'Roboto';
+  font-size:13px
+}
+
+.list-emoji{
+  position:absolute;
+  top:-32px;
+  right:32px;
+  display: none;
+  width:100px;
+  border:1px solid #b3e0fe;
+  border-radius: 4px;
+  background-color:  #b3e0fe;
+  padding:1px 3px 2px 3px;
+}
+
+.emoji{
+  border:none;
+  background-color: none;
+  padding:0px;
+}
+
+.emoji:focus{
+  outline-style: none;
+
+}
+
 .modal-end {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 20px;
-  height:auto;
+  height:30px;
 }
 
 
 .modal-icons-1 {
-  font-size: 23px;
+  font-size: 20px;
   margin-right: 10px;
 }
 
 .modal-icons-2 {
-  font-size: 23px;
+  font-size: 20px;
 }
 
 .number-likes {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom:0px;
   font-size: 15px;
 }
 
 .modal-date {
   font-size: 12px;
   font-weight: lighter;
-  margin-top: 10px;
-  font-size: 13px;
+  margin-top: 4px;
 }
 
-.modal-input {
-  margin-top: -5px;
-  width:250px;
-  height:30px;
+.newComment{
+  width:70%;
+  height:90%;
   border-radius: 5px;
   border:1px solid grey;
-
 }
 
 input:focus{
@@ -471,4 +535,20 @@ outline-style: none;
 }
 :-moz-placeholder{
   padding-left: 10px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
