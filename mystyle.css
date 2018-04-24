@@ -439,17 +439,18 @@ tr {
 }
 
 .col-1{
-
   height: 100%;
   margin-right: 5px;
   padding:5px;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .col-2{
   width:80%;
   height: 100%;
   padding:5px;
+  font-size: 15px;
 }
 
 
@@ -484,6 +485,10 @@ tr {
   border-radius: 4px;
   background-color:  #b3e0fe;
   padding:1px 3px 2px 3px;
+}
+
+.listEmoji1{
+  display:block;
 }
 
 .emoji{
