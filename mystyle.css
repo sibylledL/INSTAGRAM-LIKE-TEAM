@@ -6,7 +6,6 @@ body {
 /* NICKY NAVBAR + PROFIL */
 
 /* NAVBAR */
-
 .navbar {
   background-color: #fafafa;
   position: fixed;
@@ -508,12 +507,20 @@ tr {
   height:30px;
 }
 
+
+
+.size{
+  font-size:23px;}
+
 .modal-icons-1 {
   font-size: 20px;
   margin-right: 10px;
-  color: ;
 }
 
+
+.modal-icons {
+  font-size: 23px;
+}
 .modal-icons-2 {
   font-size: 20px;
 }
@@ -563,4 +570,10 @@ input:focus {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* Part Mike */
+
+.btn-icon {
+  cursor: pointer;
 }
