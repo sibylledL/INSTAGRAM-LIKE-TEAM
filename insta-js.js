@@ -18,7 +18,31 @@ $(function() {
       $(".nav-ul").css("margin-left", "0px");
     }
   })
+var t=0
+$(".btn1").click(function(){
+if(t == 0){
+  $(this).html("abonnée");
+  $('.modal-abonner').html("abonnée");
+  t = 1
+}else{
+  $(this).html("S'abonner");
+  $('.modal-abonner').html("S'abonner");
+  t=0
+}
+});
 
+var i = 0
+$('.modal-abonner').click(function(){
+  if(i == 0){
+    $('.modal-abonner').html("abonnée");
+    $('.btn1').html("abonnée");
+    i = 1
+  }else{
+    $('.modal-abonner').html("S'abonner");
+    $('.btn1').html("S'abonner");
+    i=0
+  }
+});
 
 
 
@@ -84,7 +108,7 @@ $(".js--img").click(function() {
                     var h = tableau.get(0).scrollHeight;
                     tableau.animate({scrollTop:h}, 300);
 
-                    
+
 
 
                 });
@@ -94,6 +118,9 @@ $(".js--img").click(function() {
     }else{
                 $('.list-emoji'+modal).css('display','none');
     }
+
+
+
 
 });
 
@@ -113,7 +140,6 @@ $(document).click(function(e) {
 
 // Part Mike
 $( document ).ready(function() {
-
 
 
   var t = 0;
