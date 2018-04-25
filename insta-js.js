@@ -91,9 +91,9 @@ $(".js--img").click(function() {
                   /*setTimeout(function(){
                     row.classList.remove('blue');}, 1000);*/
 
-                  var tableau = $(".tableau")
-                  var h = tableau.get(0).scrollHeight;
-                  tableau.animate({scrollTop:h}, 300);
+                    var tableau = $('.tableau')
+                    var h = tableau.get(0).scrollHeight;
+                    tableau.animate({scrollTop:h}, 300);
 
                 });
 
@@ -155,5 +155,3 @@ var tableau = document.querySelector(".tableau");
 var newComment = document.querySelector(".newComment");
 var submit = document.querySelector(".submit");
 var table = document.querySelector("table");
-
-
