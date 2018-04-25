@@ -19,10 +19,6 @@ $(function() {
     }
   })
 
-  $(".button-icons").click(function(){
-    $(".modal-icons-1").css("color",'red');
-
-  });
 
 
 
@@ -72,28 +68,24 @@ $(".js--img").click(function() {
 
                 $('.submit'+modal).click(function(){
 
-                  /*var row = table.insertRow(table.lenght);
-                  row.classList.add("row");
-                  var cell1 = row.insertCell(0);
-                  cell1.classList.add("col-1");
-                  var cell2 = row.insertCell(1);
-                  cell2.classList.add("col-2");
-                  cell1.innerHTML = "Rodolphe";
-                  cell2.innerHTML = newComment.value;*/
+
 
                   var col1 = "Rodolphe";
                   var col2 = $('.newComment-'+modal).val();
                   var tr = "<tr class='row'><td class='col-1'>"+col1+"</td><td class='col-2'>"+col2+"</tr>";
-                  //var node = "<p>jfiorjfire</p>"
+
                   $('.table'+modal).append(tr);
                   $('.newComment-'+modal).val(null);
 
                   /*setTimeout(function(){
                     row.classList.remove('blue');}, 1000);*/
 
-                    var tableau = $('.tableau')
+                    var tableau = $('.tableau');
                     var h = tableau.get(0).scrollHeight;
                     tableau.animate({scrollTop:h}, 300);
+
+                    
+
 
                 });
 
@@ -121,22 +113,24 @@ $(document).click(function(e) {
 
 // Part Mike
 $( document ).ready(function() {
-  var count = 465;
+
+
+
   var t = 0;
-  $('.number-likes').text(count + " j'aime");
+  var aime = $(this).data("aime");
 
   $(".btn-icon").click(function(){
     var aime = $(this).data("aime");
     if (t == 0) {
-      let lol = count +1;
+     let lol = parseInt($('.num'+aime).text())+1;
       $(".modal-icons-"+ aime).css("color", "#ed4956");
-      $('.number-likes').text(lol + " j'aime");
+      $('.num'+aime).text(lol);
       t = 1;
     }
     else {
-      let lol = count;
+      let lol = parseInt($('.num'+aime).text()-1);
       $(".modal-icons-"+ aime).css("color", "black");
-      $('.number-likes').text(lol + " j'aime");
+      $('.num'+aime).text(lol);
       t = 0;
     }
   })
