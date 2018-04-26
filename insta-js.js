@@ -19,8 +19,10 @@ $(function() {
     }
   })
 var t=0
+var i = 0
+
 $(".btn1").click(function(){
-if(t == 0){
+if((t == 0)&&(i==0)){
   $(this).html("Abonné-e");
   $('.modal-abonner').html("Abonné-e");
   var numA = parseInt($('.nbabonner').text())+1;
@@ -35,20 +37,22 @@ if(t == 0){
 }
 });
 
-var i = 0
+
 $('.modal-abonner').click(function(){
-  if(i == 0){
+  if((i == 0) && (t == 0)){
     $('.modal-abonner').html("Abonné-e");
     $('.btn1').html("Abonné-e");
     var numA = parseInt($('.nbabonner').text())+1;
     $('.nbabonner').text(numA);
+    t = 1
     i = 1
-  }else{
+  } else {
     $('.modal-abonner').html("S'abonner");
     $('.btn1').html("S'abonner");
     var numB = parseInt($('.nbabonner').text())-1;
-  $('.nbabonner').text(numB);
-    i=0
+    $('.nbabonner').text(numB);
+    i = 0
+    t = 0
   }
 });
 
@@ -72,22 +76,21 @@ $(".js--img").click(function() {
                 var count = 1;
                 $('.list-emoji'+modal).css('display','none');
 
+
+                $('.list-emoji'+modal).find('span').each(function(){
+                    $(this).click(function(){
+                    var oldValue = $('.newComment-'+modal).val();
+                    var newValue = oldValue + $(this).html();
+                    $('.newComment-'+modal).val(newValue);
+                    });
+                });
+
                 $('.emoji'+modal).click(function(){
                 //1 - show emoji list on click emoji icone
                   if(count == 1){
 
                         $('.list-emoji'+modal).css('display','inline');
                         $('.list-emoji').css('display','block');
-
-                        $('.list-emoji'+modal).find('span').each(function(){
-                            $(this).click(function(){
-                            var oldValue = $('.newComment-'+modal).val();
-                            var newValue = oldValue + $(this).html();
-                            $('.newComment-'+modal).val(newValue);
-                            });
-                        });
-
-
                         count = 0;
 
                   }else if(count==0){
@@ -99,8 +102,6 @@ $(".js--img").click(function() {
 
 
                 $('.submit'+modal).click(function(){
-
-
 
                   var col1 = "Rodolphe";
                   var col2 = $('.newComment-'+modal).val();
