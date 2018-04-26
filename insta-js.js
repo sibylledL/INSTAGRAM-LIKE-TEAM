@@ -21,12 +21,16 @@ $(function() {
 var t=0
 $(".btn1").click(function(){
 if(t == 0){
-  $(this).html("abonnée");
-  $('.modal-abonner').html("abonnée");
+  $(this).html("Abonné-e");
+  $('.modal-abonner').html("Abonné-e");
+  var numA = parseInt($('.nbabonner').text())+1;
+  $('.nbabonner').text(numA);
   t = 1
 }else{
   $(this).html("S'abonner");
   $('.modal-abonner').html("S'abonner");
+  var numB = parseInt($('.nbabonner').text())-1;
+  $('.nbabonner').text(numB);
   t=0
 }
 });
@@ -34,12 +38,16 @@ if(t == 0){
 var i = 0
 $('.modal-abonner').click(function(){
   if(i == 0){
-    $('.modal-abonner').html("abonnée");
-    $('.btn1').html("abonnée");
+    $('.modal-abonner').html("Abonné-e");
+    $('.btn1').html("Abonné-e");
+    var numA = parseInt($('.nbabonner').text())+1;
+    $('.nbabonner').text(numA);
     i = 1
   }else{
     $('.modal-abonner').html("S'abonner");
     $('.btn1').html("S'abonner");
+    var numB = parseInt($('.nbabonner').text())-1;
+  $('.nbabonner').text(numB);
     i=0
   }
 });
